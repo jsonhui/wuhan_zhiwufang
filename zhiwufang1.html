@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欢迎来到乐汇课</title>
+<link href="style/zhiwufang1.css" rel="stylesheet"  type="text/css">
+<script src="jquery.js"> </script>
+<script>
+$(function(){/*重新设置banner宽度*/
+$(".banner1").css({width:1920*$(".banner1 img").length});
+/*记录播放索引值*/
+var n=0;
+/*播放函数*/
+function runLeft(){
+    if(n<$(".banner1 img").length-1){
+    n=n+1;
+    }else{
+    $(".banner1").css({marginLeft:-1680});
+    n=1;
+    }
+    $(".banner1").stop().animate({marginLeft:(-1680*n)},1000);
+    $(".banner_btn li").removeClass("currentLi");
+    if(n==$(".banner1 img").length-1){
+    $(".banner_btn li").eq(0).addClass("currentLi");
+    }else{
+    $(".banner_btn li").eq(n).addClass("currentLi");    
+    }
+}
+var timer=setInterval(runLeft,3000);
+/*按钮控制*/
+$(".banner_btn li").hover(function(){
+    clearInterval(timer);
+    n = $(".banner_btn li").index(this);
+    $(".banner1").stop().animate({marginLeft:(-1680*n)},1000);
+    $(".banner_btn li").removeClass("currentLi");
+    $(this).addClass("currentLi");
+},function(){
+    timer=setInterval(runLeft,3000);    
+})
+})
+</script>
+<script>
+</script>
+</head>
+<body>
+<!--banner-->
+<div class="banner">
+   <div class="top">
+   <div class="signup">
+        <div class="logo">
+            <a href="zhiwufang1.html"><img src="iamge/logo.png"></a>
+        </div>
+         <ul>
+        <li class="nav1"><a href="zhiwufang1.html">首页</a></li>
+        <li><a href="product.html">课程</a></li>
+        <li><a href="teacher.html">讲师</a></li>
+        <li><a href="zuopin.html">作品</a></li>
+        <li><a href="guanyu.html">关于</a></li>
+        <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+        </div>
+    </div>
+        <div class="banner1">
+            <a href="product.html"><img src="iamge/banner2.png"></a>
+            <a href="product.html"><img src="iamge/banner4.png"></a>
+            <a href="product.html"><img src="iamge/banner2.png"></a>
+            <div class="clear"></div>
+        </div>
+        <ul class="banner_btn">
+            <li class="currentLi"></li>
+            <li></li>
+        </ul>
+    <div class="xia">
+    <div class="xiao">
+        <div class="xia1">
+            <img src="iamge/img_banner_ico12x.png">
+            <h1>无需基础轻松入学</h1>
+        </div>
+                <div class="xia1">
+            <img src="iamge/img_banner_ico22x.png">
+            <h1>就业加薪全国保障</h1>
+        </div>
+                <div class="xia1">
+            <img src="iamge/img_banner_ico32x.png">
+            <h1>学费超值无息分期</h1>
+        </div>
+                <div class="xia1">
+            <img src="iamge/img_banner_ico42x.png">
+            <h1>名企标准系统教学</h1>
+        </div>
+                <div class="xia1">
+            <img src="iamge/img_banner_ico52x.png">
+            <h1>行业专家精品小班</h1>
+        </div>
+                <div class="xia1">
+            <img src="iamge/img_banner_ico62x.png">
+            <h1>高效学习贴心服务</h1>
+        </div>
+        </div>
+    </div>
+</div>
+<!--content-->
+<div class="content">
+	<h1>我们旨为互联网行业培养和输送人才</h1>
+    <h2>来自腾讯、百度、乐视网等一线互联网公司team leader担任讲师丰富的
+专业、项目和团队管理经验，平均8年以上工作经验构建起来的课程体系</h2>
+	<div class="kecheng">
+   		<div class="pm">
+    	<img src="iamge/PM.png">
+        <div class="pm1">
+        <p>适应零基础转型产品经理
+        一线资深产品经理大咖团队
+        一对一指导，在你身边伴你成长
+        </p>
+		<li><a href="product.html">点击查看详情</a></li>
+        </div>
+        </div>
+        <div class="ui">
+        <img src="iamge/ui.png">
+        <div class="ui1">
+           <p>适应零基础转型产品运营
+            一线资深产品运营大咖团队
+            一对一指导，在你身边伴你成长
+            </p>
+		<li><a href="yunying.html">点击查看详情</a></li>
+        </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--content1-->
+<div class="content1">
+	<h1>这里聚集着互联网大拿人才</h1>
+    <h2>来自腾讯、百度、乐视网等一线互联网公司team leader担任讲师</h2>
+	<div class="box1">
+        知名
+    </div>
+        <div class="box3">
+    <img src="iamge/han.png">
+    <div class="box2">    
+        </div></div>
+    <div class="box1">
+        顶尖
+    </div>
+    <div class="box3">
+    <img src="iamge/zheng.png">
+    <div class="box2">
+    </div> </div>
+        <div class="box3">
+    <img src="iamge/zhou.png">  
+     <div class="box2">
+    </div></div>
+    <div class="box1">
+        专业
+    </div>
+        <div class="box3">
+    <img src="iamge/chen.png">
+    <div class="box2">
+    </div></div>
+    <div class="box1">
+        资深
+    </div>
+    <div class="clear"></div>
+</div>
+<!--content2-->
+<div class="content2">
+	<h1>乐汇课的优势</h1>
+    <div class="adv">
+    <img src="iamge/06一对一.png">
+    <h2>小班模式线下教学</h2>
+    <span><img src="iamge/06一对一1.png"></span>
+    </div>
+        <div class="adv">
+    <img src="iamge/名师.png">
+    <h2>资深的讲师大咖</h2>
+    <span><img src="iamge/名师1.png"></span>
+    </div>
+        <div class="adv">
+    <img src="iamge/实兵交战系统.png">
+    <h2>案例分析与演练的教学模式</h2>
+    <span><img src="iamge/实兵交战系统1.png"></span>
+    </div>
+        <div class="adv">
+    <img src="iamge/ceo.png">
+    <h2>CEO角色模拟结业</h2>
+    <span><img src="iamge/ceo1.png"></span>
+    </div>
+    <div class="adv1">
+    <img src="iamge/企业.png">
+    <h2>知名企业深度合作</h2>
+    <span><img src="iamge/企业1.png"></span>
+    </div>
+        <div class="adv1">
+    <img src="iamge/学校.png">
+    <h2>知名院校高度合作</h2>
+    <span><img src="iamge/学校1.png"></span>
+    </div>
+        <div class="adv1">
+    <img src="iamge/多人.png">
+    <h2>成功就业，100%对口就业率</h2>
+    <span><img src="iamge/多人1.png"></span>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--content3-->
+<div class="content3">
+	<h1>学员备受名企青睐</h1>
+    <h2>学生毕业投身于众多互联网企业</h2>
+   <span><img src="iamge/7.jpg"></span>
+    <span><img src="iamge/8.jpg"></span>
+    <span><img src="iamge/9.jpg"></span>
+    <span><img src="iamge/10.jpg"></span>
+    <span><img src="iamge/11.jpg"></span>
+    <span><img src="iamge/12_002.jpg"></span>
+    <span><img src="iamge/13.jpg"></span>
+    <span><img src="iamge/14.jpg"></span>
+    <span><img src="iamge/15.jpg"></span>
+    <span><img src="iamge/16_002.jpg"></span>
+    <span><img src="iamge/17_002.jpg"></span>
+    <span><img src="iamge/18.jpg"></span>
+    <span><img src="iamge/19.jpg"></span>
+    <span><img src="iamge/20.jpg"></span>
+    <span><img src="iamge/21.jpg"></span>
+    <span><img src="iamge/22.jpg"></span>
+    <span><img src="iamge/23.jpg"></span>
+    <span><img src="iamge/24.jpg"></span>
+    <span><img src="iamge/25.jpg"></span>
+    <span><img src="iamge/26.jpg"></span>
+    <span><img src="iamge/27.jpg"></span>
+    <span><img src="iamge/28.jpg"></span>
+    <span><img src="iamge/29.jpg"></span>
+    <span><img src="iamge/30.jpg"></span>
+    <span><img src="iamge/31.jpg"></span>
+    <div class="clear"></div>
+</div>
+<!--bottombanner-->
+<div class="bottombanner">
+	<img src="iamge/bottombanner.png">
+</div>
+<!--bottom-->
+<div class="bottom">
+<div class="bottom0">
+	<img src="iamge/logo1.png">
+    <span>
+    <img src="iamge/电话.png">
+    <h1>027-87605361</h1>
+    </span>
+       <div class="bottom1">
+    <div class="bottom2">
+    <p>扫描关注微信公众号</p>
+    </div>
+    <div class="bottom2">
+    <p>扫描关注新浪公众号</p>
+    </div>
+    <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>
