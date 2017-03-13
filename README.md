@@ -9,4 +9,4 @@
 ![baidu](https://github.com/jsonhui/images/blob/master/l3.png "百度logo")
 <br>
  [![baidu]](http://baidu.com)  
-[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo" 
+[baidu]:https://github.com/jsonhui/images/blob/master/l3.png "百度Logo" 
