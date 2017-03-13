@@ -4,9 +4,7 @@
              这个项目是在武汉知五方科技上班的时候帮公司制作的，现在分享出来，技术可以联系320175912@qq.com
 ```
 <br>
-<div align=center >
-[新开的博客](http://my.csdn.net/jason_fish) "跟我留言！"
-</div>
+<div align=center >[新开的博客](http://my.csdn.net/jason_fish) "跟我留言！"</div>
 <!--
 [320175912@qq.com](http://my.csdn.net/jason_fish)
 -->
