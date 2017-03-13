@@ -1,6 +1,8 @@
 # 武汉知五方官网
 ##官网首页
 [![baidu]](http://baidu.com)[baidu]:https://github.com/jsonhui/images/blob/master/l1.png "首页图片"<br>
+    [![baidu]](http://baidu.com)  
+    [baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"  
 <!--##官网首页
 ![首页图片](https://github.com/jsonhui/images/blob/master/l1.png)<br>
 ##课程
